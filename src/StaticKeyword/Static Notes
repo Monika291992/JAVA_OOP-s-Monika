@@ -1,0 +1,217 @@
+
+# Static Keyword  - it is non access modifier - static, final and abstract
+Static keyword is used for memory management
+
+#Static keyword can be used with 
+
+Variable (at class Level), can't use with local variable
+Methods 
+block
+inner class , can't use with outer class
+
+#Static Variable
++++++++++++++++++++
+Static Variable belongs to class not to the objects
+Static variable can be call using className i.e [StaticMethod.SukhoiSpeed = 3200;]
+Static variable gets memory only once in the class area at the time of class loading.
+
+#Static Variable Usage:
++++++++++++++++++++++++++
+
+Advantages of static variable
+It makes your program memory efficient (i.e., it saves memory).
+
+Understanding the problem without static variable
+===================================================
+class Student{  
+     int rollno;  
+     String name;  
+     String college="ITS";  
+} 
+Explanation: Suppose there are 500 students in my college, now all instance data members will get memory each time when the 
+object is created. All students have its unique rollno and name, so instance data member is good in such case. Here, "college" 
+refers to the common property of all objects. If we make it static, this field will get the memory only once.
+
+#Static Method
++++++++++++++++++++
+Static method belongs to class not method 
+Static method can be call using classname.staticmethod(); i.e [StaticMethod.PlaneSpeed(3200, "Sukhoi");]
+Static method can be called directly without creating object of it by using classname.Method();
+If static method is within class so no need to mention the class name at the time of method calling.
+
+Restriction:
++++++++++++++++++++
+a)Static method can access only static data. It can not access the non-static data (instance data).
+example:
+
+class StaticDemo{
+int i = 10; //non static variable
+static void display(){
+SOP(i);// can not access the non-static data
+}
+}
+Output:Compile Time Error
+
+b)Static method can only call other static methods and can't call a non-static method.
+example:
+
+class StaticDemo{
+
+static void display(){
+Show();//can't call a non-static method
+SOP("Garg");// can not access the non-static data
+}
+void show(){
+SOP("Monika");
+}
+}
+
+
+public class Class1(){
+
+static String str = "Monika";
+
+
+public  void m1(){
+
+m2()
+
+}
+
+public void m2(){
+
+}
+
+}
+c)Static method can't refer to "This" or "Super" keyword in anyway.  
+example:
+
+class StaticDemo{
+int i = 10; //non static variable
+static void display(){
+SOP(this.i);// can't refer to "This" in static method
+}
+}
+
+d) Static method called in non-static method
+
+   static void display(){  //Static method
+		
+		System.out.println(a);
+		System.out.println(name);
+		//StaticMethod1.MY_VAR =22; It’s final so the value of this variable can never be changed in the current or in any class.
+		System.out.println(MY_VAR);
+	}
+	 
+	void show(){ //non-static method
+		
+		//Static method called in non-static method
+		display();
+	}
+
+###################################################################
+#STACTIC METHOD USAGE
+
+1) Static method belongs to class not object
+2) Static method can be access using class name not object name
+3) Static method can call other static method only
+OR
+If you apply static keyword with any method, it is known as static method.
+
+A static method belongs to the class rather than the object of a class.
+A static method can be invoked without the need for creating an instance of a class.
+A static method can access static data member and can change the value of it.
+
+#########################################################
+
+when a variable is declared as static, then a single copy of variable is created and shared among all the objects at the class
+level. Thus city name ie. Pune will be shared among the all objects.
+
+#Static Block
++++++++++++++++++
+
+1)Static block executes automatically when the class is loaded in the memory.
+2)Static block is executed at the class loading, hence the class loading if we want to perform any activity, we have to define 
+that inside the block.
+a)native method 
+b)Is used to initialize the static data member.
+c)It is executed before the main method at the time of class sloading.
+3)Multiple static blocks can be created with in a class but it will be executed first.
+4)JDK 1.6 version before, Hello text can be printed without using MAIN method 
+
+Class test{
+static{ // static block
+SOP("HELLO");
+system.exit(0);
+}
+}
+OUTPUT: HELLO
+
+NOTE:
++++++++
+but after 1.6 version, MAIN method should be there.
+
+Class test{
+static{ // static block
+SOP("HELLO");
+}
+p s v m (string[] args){
+SOP("MAIN METHOD");
+}
+}
+
+OUTPUT: HELLO
+        MAIN METHOD
+        
+##########################################
+
+Q)Why is the Java main method static?
+Ans)It is because the object is not required to call a static method. If it were a non-static method, JVM creates an object 
+first then call main() method that will lead the problem of extra memory allocation.
+
+Q) Can we execute a program without main() method?
+Ans) No, one of the ways was the static block, but it was possible till JDK 1.6. Since JDK 1.7, it is not possible to 
+execute a Java class without the main method.
+
+Since JDK 1.7 and above, output would be:
+
+Error: Main method not found in class A3, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+#################################################
+
+Final Keyword:
+++++++++++++++++++
+
+It’s final so the value of this variable can never be changed in the current or in any class.
+
+Key points:
+final variable always needs initialization, if you don’t initialize it would throw a compilation error. have a look at 
+below example-
+
+public class MyClass{
+    public static final int MY_VAR;
+}
+Error: variable MY_VAR might not have been initialized
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

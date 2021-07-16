@@ -1,0 +1,197 @@
+OOP's -> object oriented programming system/structure
+OOP's is a programming paradigm/methodology
+
+Programming Paradigm: it is an approach to solve the problem using some programming language.
+a) object oriented paradigm
+b) Procedural paradigm
+c) Functional paradigm
+d) Logical paradigm
+e) Structural paradigm
+
+6 main pillars in JAVA:
+1) Class
+2) Objects and Methods
+3) Inheritance 
+4) Abstraction
+5) Polymorphism
+6) Encapsulation
+
+First purely object oriented language - Small Talk
+
+Real world example of class, objects and methods
+1) Animal - class
+2) Dog, cat - objects
+3) eat(), run()- methods
+
+**objects is used to access the methods of a class.
+
+1) Class > Collection of Object  
+       > Class is not real world entity Like BluePrint or template 
+       > Class is not occupy memory
+       > Contains
+                 1) Method
+                 2) Constructor
+                 3) Field
+                 4) Block
+                 5) Nested class
+############################################################                 
+                 
+                 //Class Blue Print
+                 access modifier class keyword ClassName(){
+                 }
+                 public class OOP's  
+                 {
+                 	public static void main(String[]args)
+                 	{
+                 	 method calling
+                 	}
+                 }
+############################################################    
+2) Method > Is set of code used to perform a particular task
+ 		   > used for Code Re-usability
+ 		   > used for Code Optimization
+
+############################################################
+
+ 		   //Method
+ 		   access modifier return type methodName(list of parameters)
+ 		   public void getData()
+ 		   {
+ 		     code block
+ 		   }
+############################################################
+
+ 3) Object > Is instance of class or refrence_variable
+           > Is real world entity
+           > Occupy memory
+           
+Object consists of > Identity : name
+    		       > State/Attribute
+    			   > Behaviour 
+    				  
+Object can be created using 5 ways > using [new keyword]
+    							   > new Instance() method
+    							   > clone() method
+    							   > de-serialization
+    							   > factory method
+    								   
+Three Steps to create object
+****************************
+1st > Obj Declaration > Animal Romil; //Animal is class //Romil is object or refrence_variable
+     
+2nd > Obj Instantiation > Romil = new //new keyword is used to create object(Romil)& allocate memory to object(Romil)
+
+NOTTE: Initializing an object means storing data into the object. Let's see a simple example where we are going to initialize the object through a reference variable.
+    					   
+3rd > Obj Initialization = Animal(); //Constructor used to initialize the  object 
+    					   				   i.e Romil = new Animal(); // Obj Initialization
+    					   						  
+    					   	################################################					  
+    						Object created == Animal Romil = new Animal();
+    						################################################ 
+    					 
+    					 	NOTE: Below are the description of each keyword used in object 
+    					 	
+    					    Animal   // Class Name
+    					 	Romil    // Object or Instance of class Animal
+    					 	new      // new keyword is used to create object & memory allocation for object
+    					 	Animal() // Is Constructor, Used to initialize the object 
+    					 	 		 
+INSTANTIATE= 1) Simple meaning of instantiate is creating an object from class
+    			    ClassName obj = new ClassName();
+    			  
+    		 2) To instantiate a class means to create an instance of the class
+    			 
+    		 3) Instantiating is when you use the new keyword to actually create an object of your class.
+    			    Dog myDog = new Dog();
+    			    
+    3_1) INITIALIZING THE OBJECT in three ways
+         1) Using reference variable
+         2) Using method
+         3) Using constructor
+         
+         
+############################################################
+
+In case, if we don’t initialized values of class fields then they are initialized with their default values.
+
+Default values of instance variables
+1) int, byte, short, long -> 0
+2) float, double -> 0.0
+3) string or any reference = null
+4) boolean -> false
+
+These values are initialized by the default constructor of JVM during object creation at runtime.       
+
+############################################################
+
+#Default values of instance variables
++++++++++++++++++++++++++++++++++++++++++
+
+int, byte, short, long -> 0
+
+float, double → 0.0
+
+string or any reference = null
+
+boolean → false
+
+These values are initialized by the default constructor of JVM during object creation at runtime.
+
+#Instance variable in Java
++++++++++++++++++++++++++++++
+
+A variable which is created inside the class but outside the method is known as an instance variable. It doesn't get memory 
+at compile time. It gets memory at runtime when an object or instance is created.
+
+Instance variable, which can be access anywhere in the class.  
+    
+NOTE: Parameter is variable defined by a method that receives value when the method is called     
+
+#new keyword in Java
+++++++++++++++++++++++
+
+The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.    
+
+#Anonymous object
+++++++++++++++++++++
+
+Anonymous simply means nameless. An object which has no reference is known as an anonymous object. It can be used 
+at the time of object creation only.
+
+If you have to use an object only once, an anonymous object is a good approach. For example: 
+
+a) new Calculation();//anonymous object  
+
+Calling method through a reference:
+++++++++++++++++++++++++++++++++++++++
+b)Calculation c=new Calculation();  
+c.fact(5);  
+
+Calling method through an anonymous object:
+++++++++++++++++++++++++++++++++++++++++++++
+
+c) new Calculation().fact(5);  
+
+#Creating multiple objects by one type only
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Rectangle r1=new Rectangle(), r2=new Rectangle();//creating two objects  
+
+##################################################################################
+
+call-by-value and call-by-reference in Methods:
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+There are two ways to pass an argument to a method
+
+a)call-by-value: In this approach copy of an argument value is pass to a method. Changes made to the argument value 
+                 inside the method will have no effect on the arguments.
+
+b)call-by-reference: In this reference of an argument is pass to a method. Any changes made inside the method will 
+                     affect the argument value.
+                      
+NOTE :However there is no concept of call-by-reference in Java. Java supports only call by value.  
+    			    
+
+  

@@ -1,0 +1,169 @@
+OOP's
+
+1) Class
+    Rules for Java Class
+    Class fields
+###############################################################     
+2) Object = Done
+     Instance variable
+     Default values of instance variables
+     New keyword
+     3 Ways to initialize object 
+         By reference variable
+         By method
+         By constructor
+    Different ways to create an object
+         By new keyword
+         By newInstance() method
+         By clone() method
+         By Deserialization
+         By factory method
+    Anonymous object
+         Calling method through a reference:
+         Calling method through an anonymous object
+    Creating multiple objects by one type only
+################################################################
+3) Method -Study Tonight
+    Method Declaration
+    Method Signature:
+        Method name 
+        Parameter list
+    Access Specifier
+        Public
+        Private
+        Protected
+        Default
+    Return Type
+        Returning Multiple values
+        Return Object from Method
+    Types of Method
+        Predefined Method
+        User-defined Method
+    Static Method
+    Instance Method 
+        Accessor Method
+        Mutator Method
+    Abstract Method
+    Factory method
+    Parameter Vs. Argument in a Method
+        Call-by-value
+        Call-by-reference
+#################################################################
+2) Constructor - Done
+    Rules for creating Java constructor
+    Types of Java constructors
+        Default constructor
+        no-arg constructor
+        Parameterized constructor
+    Constructor Chaining
+    Constructor Overloading
+    Super() with Constructor
+    Java Copy Constructor
+    Copying values without constructor
+    Private Constructors
+    Difference between constructor and method
+#################################################################   
+3) Inheritance- Done
+    Types of inheritance - Done
+         Single Inheritance - Done
+         Multilevel Inheritance - Done
+         Hierarchical Inheritance - Done
+         Multiple Inheritance
+         Hybrid Inheritance
+    Inheritance with Super keyword  - Done
+         Parent Variable - Done
+         Parent Method - Done
+         Parent Constructor - Done
+    Inheritance with Method Overriding - Done
+    Types of relationships b/w classes
+         Association
+            Aggregation
+            Composition
+#################################################################
+4) Polymorphism
+   Method Overloading - revised
+   Method OverRiding
+   Can we achieve MethodOverloading  by changing the return type of the methods only? -> ans - NO
+   Can we overload Java Main Method?
+   MethodOverloading and type promotion
+   Different cases of type promotion
+   Method overloading and null error
+#################################################################
+5) Abstraction 
+	 Abstract Method(Un-concrete method)
+	 Abstract Class 
+	 Concrete method
+	 Extends keyword
+	 Method overriding
+	 Why we need an abstract class?
+#################################################################
+6) Interface 
+     Abstract Method(Un-concrete method)
+     Multiple Inheritance
+     Loose Coupling
+     JAVA 8 Default Method(Concrete Method)
+     JAVA 8 Static Method(Concrete Method)
+     JAVA 9 Private Method(Concrete Method)
+     Method Overriding
+     Relationship between classes and interfaces
+     Difference b/w Abstraction and Interfaces
+     What is marker or tagged interface?
+     Nested Interface in Java
+#################################################################
+7) Encapsulation
+      Data Hiding
+      Getter Method
+      Setter method    
+#################################################################
+8) This Keyword -Done
+    Uses of this keyword - Done
+         this: to refer current class instance variable
+         this: to invoke current class method
+         this() : to invoke current class constructor
+         this: to pass as an argument in the method
+         this: to pass as argument in the constructor call
+         this keyword can be used to return current class instance
+    Proving this keyword
+#################################################################
+9) Super Keyword - Done
+    Use of super keyword - Done
+         super is used to refer immediate parent class instance variable.
+         super can be used to invoke parent class method
+         super is used to invoke parent class constructor.
+    How to use super keyword in case of method overriding
+#################################################################
+10) Final Keyword - Done
+     final variable
+     final method
+     final class
+     Is final method inherited?
+     Blank Final Variable
+          What is blank or uninitialized final variable? 
+          Can we initialize blank final variable?
+          static blank final variable
+     What is final parameter?
+     Can we declare a constructor final?
+#################################################################
+11) Static Keyword
+     StaticVariable - Done
+     Static Method - Done
+     Why is the Java main method static?
+     Static block
+         Single static block
+          Multiple Static blocks
+     Static Class
+     Static variable vs Instance variable
+     Non-static (instance) variable cannot be referenced from a static context.
+     Can we execute a program without main() method?
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
